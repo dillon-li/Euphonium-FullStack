@@ -1,3 +1,5 @@
+/* The file responsible for setting up the express server */
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
