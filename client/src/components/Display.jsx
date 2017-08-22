@@ -39,8 +39,13 @@ class Display extends Component {
     console.log(this.state)
     return (
       <div className="Display">
-      <button onClick={this.displayMemes.bind(this)}>{this.state.buttonText}</button>
+      <Button
+        onClick={this.displayMemes.bind(this)}
+        color="primary">
+        {this.state.buttonText}
+      </Button>
         <WebM url={this.state.webfile}></WebM>
+        <Button color="danger">Danger!</Button>{' '}
       </div>
     );
   }
