@@ -7,9 +7,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
-
 var app = express();
 
 // view engine setup
@@ -26,8 +23,24 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.get('/getMemes', function(req, res, next) {
+  var testfolder;
+
+  if (app.settings.env == 'development')
+  {
+    testFolder = '/home/dillon/Euphonium/public/images/webms'
+    console.log("Running testfolder from dev");
+  }
+  else
+  {
+    testFolder = '/app/public/images/webms';
+  }
+  const fs = require('fs');
+  var webfiles = [];
+  fs.readdirSync(testFolder).forEach(file => {
+    webfiles.push(file);
+  })
   res.json([{
-    string: "It worked"
+    urls: webfiles
   }]);
 });
 
