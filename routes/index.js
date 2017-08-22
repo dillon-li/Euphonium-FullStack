@@ -6,4 +6,10 @@ router.get('/express', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/getMemes', function(req, res, next) {
+  res.json([{
+    string: "It worked"
+  }]);
+});
+
 module.exports = router;
