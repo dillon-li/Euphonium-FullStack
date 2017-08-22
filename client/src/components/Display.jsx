@@ -16,8 +16,10 @@ class Display extends Component {
     fetch('/getMemes')
       .then(res => res.json())
       .then(works => this.setState({ works }));
+    console.log("Mounting")
   }
 
+  // Get that randomness for intense MEMEage
   displayMemes() {
     var webfiles = this.state.works[0].webfiles
     console.log(webfiles.length)
