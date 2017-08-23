@@ -19,11 +19,14 @@ class WebM extends Component {
 
   render() {
     return (
-      <Media center>
+      <Media center id="media-container">
         <ReactPlayer
+          id="webfile"
           url={this.props.url}
           playing
           loop
+          width="100%"
+          height="100%"
         />
       </Media>
     );

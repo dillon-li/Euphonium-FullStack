@@ -51,10 +51,10 @@ class Display extends Component {
           {this.state.buttonText}
         </Button>
         <Row>
-        <Col xs="8">
+        <Col>
         <WebM url={this.state.webfile}></WebM>
         </Col>
-        <Col xs="1">
+        <Col>
           <Button color="danger" block>DANK</Button>
           <Button color="primary" block>Not Dank</Button>
         </Col>
