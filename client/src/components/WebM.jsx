@@ -25,7 +25,6 @@ class WebM extends Component {
           url={this.props.url}
           playing
           loop
-          width="100%"
           height="100%"
         />
       </Media>
