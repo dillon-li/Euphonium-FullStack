@@ -45,7 +45,6 @@ class Display extends Component {
         {this.state.buttonText}
       </Button>
         <WebM url={this.state.webfile}></WebM>
-        <Button color="danger">Danger!</Button>{' '}
       </div>
     );
   }
