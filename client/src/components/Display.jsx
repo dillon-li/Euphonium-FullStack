@@ -27,8 +27,7 @@ class Display extends Component {
     console.log(webfiles.length)
     const item = webfiles[Math.floor(Math.random()*webfiles.length)];
     console.log(item.toString())
-    const encoded = encodeURIComponent(item.toString())
-    const urlString = "../../images/webms/" + encoded
+    const urlString = "../../images/webms/" + item.toString()
     this.setState (
       {
         webfile: urlString,
