@@ -9,7 +9,6 @@ class Homepage extends Component {
             <header id="header">
               <nav id="nav">
                 <ul>
-                  Some nav
                 </ul>
               </nav>
 
@@ -17,10 +16,10 @@ class Homepage extends Component {
 
             <article id="main">
               <header>
-                <h2>WEABOO CENTRAL</h2>
+                <h2 id="rainbow">WEABOO CENTRAL</h2>
                 <p>KUMIKO X REINA</p>
                 <a href="/display">
-                  <button type="button">Click for Greatness</button>
+                  <button type="button">CLICK FOR GREATNESS</button>
                 </a>
               </header>
 
@@ -34,7 +33,7 @@ class Homepage extends Component {
             </article>
 
             <footer id="footer">
-              SOME FOOTER
+              FOR THE MEMES
             </footer>
 
         </div>

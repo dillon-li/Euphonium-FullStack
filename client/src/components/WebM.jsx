@@ -19,7 +19,7 @@ class WebM extends Component {
 
   render() {
     return (
-      <Media left>
+      <Media>
         <ReactPlayer
           url={this.props.url}
           playing
